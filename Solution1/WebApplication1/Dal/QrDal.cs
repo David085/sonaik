@@ -2,5 +2,24 @@
 {
     public class QrDal
     {
+        public Qr Create(Qr qr)
+        {
+            return qr;
+        }
+
+        public Qr Read(int id)
+        {
+            return new Qr();
+        }
+
+        public Qr Update(Qr qr, int id)
+        {
+            return qr;
+        }
+
+        public int Delete(int id)
+        {
+            return id;
+        }
     }
 }
