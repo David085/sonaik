@@ -17,7 +17,7 @@
             return zapato;
         }
 
-        public Zapato Delete(int id)
+        public int Delete(int id)
         {
             return id;
         }
