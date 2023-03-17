@@ -16,12 +16,13 @@ public class Contexto : DbContext
 
 	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 	{
-	 optionsBuilder.UseSqlServer();
+	 optionsBuilder.UseSqlServer("Data Source=opa162\\SQL2019;Initial Catalog=Fec;User ID=gggg;Password=1234");
 	}
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
-		 modelBuilder.Entity<Qr>().HasKey(x => x.id)  
+		modelBuilder.Entity<Qr>().HasKey(x => x.id);
+		modelBuilder.Entity<Usuario>().HasKey(x => x.id);
 	}
 
 }
