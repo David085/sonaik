@@ -16,7 +16,7 @@ public class Contexto : DbContext
 
 	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 	{
-	 optionsBuilder.UseSqlServer("Data Source=opa162\\SQL2019;Initial Catalog=Fec;User ID=gggg;Password=1234");
+	 optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=sonaik;Integrated Security=True");
 	}
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -4,6 +4,8 @@
     {
         public Qr Create(Qr qr)
         {
+           Contexto obj = new  Contexto(); 
+    
             return qr;
         }
 
