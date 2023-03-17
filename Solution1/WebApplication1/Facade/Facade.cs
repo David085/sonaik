@@ -1,20 +1,21 @@
 ﻿namespace WebApplication1.Facade
 {
+    
     public class Facade
     {
-        public List<QR> ventaNueva(User user, Zapato zapato)
+        public Qr ventaNueva(Usuario User, Zapato zapato)
         {
-            return QR;
+            return new Qr();
         }
 
-        public List<QR> VentaVieja(UserC userC, UserV userV, Zapato zapato)
+        public Qr VentaVieja(Usuario userVende, Usuario userCompra, Zapato zapato)
         {
-            return QR;
+            return new Qr();
         }
 
-        public List<QR> Consul(QR qr, Cedula int)
+        public Qr Consulta(Qr Qr, int Cedula)
         {
-            return QR;
+            return new Qr();
         }
     }
 }

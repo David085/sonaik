@@ -1,8 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 public class Qr
 {
-	public string Modelo { get; set; }
+    [Key]
+    public string id { get; set; }
+    public string Modelo { get; set; }
 
 	public int propietario { get; set; }
 
